@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "6j2vtyISxDeyHiq8XVtF0Dh6okPpp/agQXb8IFQbh0DOZEnvYoFJ3HZMZAzJNBpniJ2mTle8e9IjyqZAHyrpTQ==",
+  "success": true,
+  "projectFilePath": "E:\\ISI\\COURS\\SESSION 1\\Programming in a graphical envirn C#\\Solutions\\Utility\\UtilityLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MON PC\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\MON PC\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

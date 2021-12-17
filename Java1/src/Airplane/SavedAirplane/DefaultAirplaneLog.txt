@@ -1,0 +1,24 @@
+=============================================
+Airplane DefaultAirplaneLog logged in on Tue Feb 16 17:57:10 AST 2021
+takeoff:failed:motorOff
+start:success
+increase:failed:notFlying
+takeoff:success
+=============================================
+Airplane DefaultAirplaneLog logged in on Tue Feb 16 18:00:20 AST 2021
+start:success
+fly:success
+takeoff:failed:flying
+increase:success:1000
+=============================================
+Airplane DefaultAirplaneLog logged in on Tue Feb 16 18:00:20 AST 2021
+increase:success:1000
+decrease:success:1000
+decrease:success:1000
+stop:failed:flying
+decrease:success:1000
+=============================================
+Airplane DefaultAirplaneLog logged in on Tue Feb 16 18:01:40 AST 2021
+start:success
+fly:success
+decrease:success:1000

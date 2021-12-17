@@ -1,0 +1,4 @@
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Utility2\obj\Debug\netstandard2.0\Utility2.csprojAssemblyReference.cache
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Utility2\obj\Debug\netstandard2.0\Utility2.AssemblyInfoInputs.cache
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Utility2\obj\Debug\netstandard2.0\Utility2.AssemblyInfo.cs
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Utility2\obj\Debug\netstandard2.0\Utility2.csproj.CoreCompileInputs.cache

@@ -1,0 +1,139 @@
+﻿ <!--Author: Fetra Ranaivoson-->
+<Window x:Class="ShoppingApp.MainApplicationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShoppingApp"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Background="DarkSlateGray"
+        Loaded="WindowLoaded"
+        Title="MainApplicationWindow" Height="700" Width="1200">
+    <Grid Margin="10">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Background="CadetBlue" Orientation="Horizontal">
+                <Label Content="Search" Margin="5,5,0,10"/>
+                <TextBox Width="400" Grid.Column="0" HorizontalAlignment="Left" Margin="5"
+                         Text="{Binding Path=OnApplicationRunningViewModel.ItemNameFilter,
+                         UpdateSourceTrigger=PropertyChanged}"/>
+                
+                <Label Content="Logged user:" Margin="5,5,0,10"/>
+                <TextBox Text="{Binding Path=CurrentUser.UserName}" HorizontalAlignment="Left" Width="100" Margin="5,5,0,10" IsEnabled="False"/>
+                <Separator Width="2" Opacity="0"/>
+                <Button Content="Log out" Margin="5" Background="Gainsboro"
+                        Command="{Binding Path=OnApplicationRunningViewModel.LogoutCommand}"/>
+                <Separator Width="40" Opacity="0"/>
+                <Label Content="Balance: $" Margin="5,5,0,10"/>
+                <TextBox Text="{Binding Path=CurrentUser.Balance}" HorizontalAlignment="Left" Width="100" Margin="5,5,0,10" IsEnabled="False"/>
+                <Separator Width="40" Opacity="0"/>
+                <Label Content="Recharge: $" Margin="5,5,0,10"/>
+                <TextBox Text="{Binding Path=OnApplicationRunningViewModel.RechargeAmount}" Width="50" Margin="5,5,0,10"/>
+                <Button Content="Set" Margin="10" Background="ForestGreen"
+                        Command="{Binding Path=OnApplicationRunningViewModel.RechargeCommand}"/>
+                <Separator Width="40" Opacity="0"/>
+            </StackPanel>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TabControl>
+
+                    <TabItem Header="Home">
+                        <GroupBox Header="Store" >
+                            <DataGrid x:Name="StoreItemsDataGrid" AutoGenerateColumns="False" IsReadOnly="True"
+                                    ItemsSource="{Binding Path=OnApplicationRunningViewModel.StoreItems}"
+                                    SelectedItem="{Binding Path=OnApplicationRunningViewModel.SelectedItem}">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Item Id" Binding="{Binding Path=ItemId}"/>
+                                    <DataGridTextColumn Header="Item Name" Binding="{Binding Path=ItemName}"/>
+                                    <DataGridTextColumn Header="Price" Binding="{Binding Path=Price}"/>
+                                    <DataGridTextColumn Header="Available" Binding="{Binding Path=QuantityAvailable}"/>
+                                    <DataGridTextColumn Header="Description" Binding="{Binding Path=Description}"/>
+                                    <!--<DataGridTextColumn Header="Date created" Binding="{Binding Path=DateCreated}"/>
+                                    <DataGridTextColumn Header="Last purchase" Binding="{Binding Path=LastPurchase}"/>-->
+                                    <!--<DataGridTextColumn Header="Sold" Binding="{Binding Path=QuantitySold}"/>
+                                    <DataGridTextColumn Header="Turnover" Binding="{Binding Path=Turnover}"/>-->
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </GroupBox>
+                    </TabItem>
+
+                    <TabItem Header="My Cart" >
+                        <StackPanel >
+                            <GroupBox Header="MyCart">
+                                <DataGrid x:Name="CartItemsDataGrid" AutoGenerateColumns="False" Height="320" IsReadOnly="True"
+                                    ItemsSource="{Binding Path=OnApplicationRunningViewModel.UserItems}"
+                                    SelectedItem="{Binding Path=OnApplicationRunningViewModel.UserSelectedItem}">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="Item Id" Binding="{Binding Path=ItemId}"/>
+                                        <DataGridTextColumn Header="Item Name" Binding="{Binding Path=ItemName}"/>
+                                        <DataGridTextColumn Header="Price" Binding="{Binding Path=Price}"/>
+                                        <DataGridTextColumn Header="Description" Binding="{Binding Path=Description}"/>
+                                        <DataGridTextColumn Header="Paid" Binding="{Binding Path=IsPaid}"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+
+                            </GroupBox>
+                            <GroupBox Header="CheckOut" Height="auto">
+                                <StackPanel>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Content="Item Id" Grid.Column="0"/>
+                                        <Label Content="{Binding Path=OnApplicationRunningViewModel.UserSelectedItem.ItemId}" Grid.Column="1"/>
+                                        <Label Content="Item Name" Grid.Row="1"/>
+                                        <Label Content="{Binding Path=OnApplicationRunningViewModel.UserSelectedItem.ItemName}" Grid.Column="1" Grid.Row="1"/>
+                                        <Label Content="Description" Grid.Row="2"/>
+                                        <Label Content="{Binding Path=OnApplicationRunningViewModel.UserSelectedItem.Description}" Grid.Column="1" Grid.Row="2"/>
+                                        <Label Content="Total Price" Grid.Row="4" />
+                                        <Label Content="{Binding Path=OnApplicationRunningViewModel.TotalPrice}" Grid.Column="1" Grid.Row="4"/>
+                                        <Label Content="Set Quantity" Grid.Row="3"  />
+                                        <TextBox  Grid.Column="1" Grid.Row="3" Width="50" HorizontalAlignment="Left"
+                                               Text="{Binding Path=OnApplicationRunningViewModel.QuantityToPurchase}" Height="26" Margin="0,0,0,26" Grid.RowSpan="2" VerticalAlignment="Bottom"/>
+                                    </Grid>
+                                </StackPanel>
+                            </GroupBox>
+                            <Button Content="Pay" Grid.Column="2" Grid.Row="4" Width="50" HorizontalAlignment="Right" Margin="10"
+                                    Command="{Binding Path=OnApplicationRunningViewModel.PayItemCommand}"/>
+                        </StackPanel>
+                    </TabItem>
+
+                </TabControl>
+
+
+            </Grid>
+
+            <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="AddToCartBtn" Content="Add" Width="50" Margin="2" Background="Orange"
+                    Command="{Binding Path=OnApplicationRunningViewModel.AddItemCommand}"/>
+                <Button x:Name="RemoveFromCartBtn" Content="Remove" Width="50" Margin="2" Background="CadetBlue"
+                    Command="{Binding Path=OnApplicationRunningViewModel.RemoveItemCommand}"/>
+                <Button x:Name="EmptyCartBtn" Content="Empty" Width="50" Margin="2" Background="OrangeRed"
+                    Command="{Binding Path=OnApplicationRunningViewModel.EmptyItemCommand}"/>
+            </StackPanel>
+
+        </Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercises\bin\Debug\netcoreapp3.1\Exercises.exe
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercises\bin\Debug\netcoreapp3.1\Exercises.deps.json
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercises\bin\Debug\netcoreapp3.1\Exercises.runtimeconfig.json
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercises\bin\Debug\netcoreapp3.1\Exercises.runtimeconfig.dev.json
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercises\bin\Debug\netcoreapp3.1\Exercises.dll
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercises\bin\Debug\netcoreapp3.1\Exercises.pdb
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercises\obj\Debug\netcoreapp3.1\Exercises.csprojAssemblyReference.cache
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercises\obj\Debug\netcoreapp3.1\Exercises.AssemblyInfoInputs.cache
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercises\obj\Debug\netcoreapp3.1\Exercises.AssemblyInfo.cs
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercises\obj\Debug\netcoreapp3.1\Exercises.csproj.CoreCompileInputs.cache
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercises\obj\Debug\netcoreapp3.1\Exercises.dll
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercises\obj\Debug\netcoreapp3.1\Exercises.pdb
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercises\obj\Debug\netcoreapp3.1\Exercises.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercise8\bin\Debug\netcoreapp3.1\Exercise8.exe
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercise8\bin\Debug\netcoreapp3.1\Exercise8.deps.json
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercise8\bin\Debug\netcoreapp3.1\Exercise8.runtimeconfig.json
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercise8\bin\Debug\netcoreapp3.1\Exercise8.runtimeconfig.dev.json
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercise8\bin\Debug\netcoreapp3.1\Exercise8.dll
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercise8\bin\Debug\netcoreapp3.1\Exercise8.pdb
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercise8\obj\Debug\netcoreapp3.1\Exercise8.AssemblyInfoInputs.cache
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercise8\obj\Debug\netcoreapp3.1\Exercise8.AssemblyInfo.cs
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercise8\obj\Debug\netcoreapp3.1\Exercise8.csproj.CoreCompileInputs.cache
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercise8\obj\Debug\netcoreapp3.1\Exercise8.dll
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercise8\obj\Debug\netcoreapp3.1\Exercise8.pdb
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Exercise8\obj\Debug\netcoreapp3.1\Exercise8.genruntimeconfig.cache

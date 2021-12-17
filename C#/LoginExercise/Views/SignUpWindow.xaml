@@ -1,0 +1,32 @@
+﻿<Window x:Class="LoginExercise.Views.SignUpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginExercise.Views"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="SignUpWindow" Height="270" Width="350">
+    <Grid Margin="30">
+        <StackPanel>
+            <Label Content="Username"/>
+            <TextBox Text="{Binding Path=Username}"/>
+            <Label Content="Password" />
+            <TextBox Text="{Binding Path=Password}" />
+            <Separator Height="10" Opacity="0"/>
+            <Button x:Name="SignUpBtn" Content="Sign up"
+                    Command="{Binding Path=SignUpCommand}"/>
+            <Separator Height="10" Opacity="0"/>
+            
+            <TextBlock>
+                <Run>Already have an account?</Run>
+                <Hyperlink Command="{Binding Path=LogInCommand}">
+                    Login
+                </Hyperlink>
+            </TextBlock>
+
+
+        </StackPanel>
+
+    </Grid>
+</Window>

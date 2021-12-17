@@ -1,0 +1,101 @@
+﻿<Window x:Class="PassportApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PassportApp"
+        mc:Ignorable="d"
+        Title="PassportApp" 
+        Width="800" Height="240" 
+        ResizeMode="CanResize">
+    
+    
+    <StackPanel Orientation="Horizontal" Margin="10">
+
+        <StackPanel>
+            
+            <DataGrid x:Name="PassportDataGrid" AutoGenerateColumns="False" 
+                  MinHeight="150"
+                  MaxWidth="375"
+                  HorizontalAlignment="Left"
+                  SelectionMode="Extended">
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="First Name" IsReadOnly="True" Binding="{Binding Path=FirstName}"/>
+                    <DataGridTextColumn Header="Last Name" IsReadOnly="True" Binding="{Binding Path=LastName}"/>
+                    <DataGridTextColumn Header="Date of Birth" IsReadOnly="True" Binding="{Binding Path=DateOfBirth}"/>
+                    <DataGridTextColumn Header="Height" IsReadOnly="True" Binding="{Binding Path=Height}"/>
+                    <DataGridTextColumn Header="Country" IsReadOnly="True" Binding="{Binding Path=Country}"/>
+                </DataGrid.Columns>
+
+            </DataGrid>
+
+            <Separator Opacity="0"/>
+            
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="RemoveButton" Content="Remove" Width="50" Margin="10,0,10,0"
+                        Click="RemoveButton_Click"/>
+                <Button x:Name="ClearButton" Content="Clear" Width="50" Margin="10,0,10,0"
+                        Click="ClearButton_Click"/>
+            </StackPanel>
+           
+        </StackPanel>
+
+
+        <StackPanel Width="350" Margin="20,0,0,0">
+            
+            <StackPanel Orientation="Vertical" >
+
+                <StackPanel Orientation="Horizontal" >
+                    <Label Content ="First Name" />
+                    <TextBox x:Name="FirstNameTextBox" MinWidth="100" />
+                </StackPanel>
+
+                <Separator Opacity="0"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content ="Last Name" />
+                    <TextBox x:Name="LastNameTextBox" MinWidth="100"/>
+                </StackPanel>
+
+                <Separator Opacity="0"/>
+                
+                <StackPanel Orientation="Horizontal">
+                    <Label Content ="Date of Birth" />
+                    <DatePicker x:Name="DateOfBirthDatePicker" MinWidth="100" />
+                </StackPanel>
+
+                <Separator Opacity="0"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content ="Height" />
+                    <TextBox x:Name="HeightTextBox" MinWidth="100"/>
+                </StackPanel>
+
+                <Separator Opacity="0"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content ="Country" />
+                    <TextBox x:Name="CountryTextBox" MinWidth="100"/>
+                </StackPanel>
+            </StackPanel>
+
+            <Separator Opacity="0"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="AddButton" Content="Add" Width="50" Margin="10,0,10,0"
+                        Click="AddButtonClicked"/>
+                
+                
+            </StackPanel>
+            
+        </StackPanel>
+
+       
+
+     
+
+    </StackPanel>
+
+   
+</Window>

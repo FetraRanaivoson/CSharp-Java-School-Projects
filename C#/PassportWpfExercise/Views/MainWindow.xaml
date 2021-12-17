@@ -1,0 +1,172 @@
+﻿<Window x:Class="PassportApp.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PassportApp.Views"
+        mc:Ignorable="d"
+        Title="Passports manager"
+        SizeToContent="WidthAndHeight"
+        Loaded="WindowLoaded">
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Padding" Value="10, 2" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="Separator">
+            <Setter Property="Width" Value="10" />
+            <Setter Property="Height" Value="10" />
+            <Setter Property="Opacity" Value="0" />
+        </Style>
+    </Window.Resources>
+
+    <DockPanel Margin="20">
+
+        <StackPanel Orientation="Vertical"
+                    DockPanel.Dock="Right">
+            <DockPanel>
+                <Label Content="First name"
+                       MinWidth="80"
+                       DockPanel.Dock="Left"/>
+                <Separator DockPanel.Dock="Left"/>
+                <Label Content="{Binding Path=SelectedPassport.FirstName}"
+                       MinWidth="100"/>
+            </DockPanel>
+
+            <DockPanel>
+                <Label Content="Last name"
+                       MinWidth="80"
+                       DockPanel.Dock="Left"/>
+                <Separator DockPanel.Dock="Left"/>
+                <Label Content="{Binding Path=SelectedPassport.LastName}"
+                       MinWidth="100"/>
+            </DockPanel>
+
+            <DockPanel>
+                <Label Content="Date of birth"
+                       MinWidth="80"
+                       DockPanel.Dock="Left"/>
+                <Separator DockPanel.Dock="Left"/>
+                <Label Content="{Binding Path=SelectedPassport.DateOfBirth}"
+                       MinWidth="100"/>
+            </DockPanel>
+
+            <DockPanel>
+                <Label Content="Height"
+                       MinWidth="80"
+                       DockPanel.Dock="Left"/>
+                <Separator DockPanel.Dock="Left"/>
+                <Label Content="{Binding Path=SelectedPassport.Height}"
+                       MinWidth="100"/>
+            </DockPanel>
+
+            <DockPanel>
+                <Label Content="Country"
+                       MinWidth="80"
+                       DockPanel.Dock="Left"/>
+                <Separator DockPanel.Dock="Left"/>
+                <Label Content="{Binding Path=SelectedPassport.Country}"
+                       MinWidth="100"/>
+            </DockPanel>
+
+        </StackPanel>
+        
+        <Separator DockPanel.Dock="Right"/>
+
+        <StackPanel Orientation="Vertical"
+                    MinWidth="180"
+                    MaxWidth="180"
+                    DockPanel.Dock="Left">
+
+            <DockPanel>
+                <Label Content="First name" />
+                <TextBox x:Name="FirstNameTextBox"
+                         Text="{Binding Path=AddPassportViewModel.FirstName}"/>
+            </DockPanel>
+
+            <Separator />
+
+            <DockPanel>
+                <Label Content="Last name" />
+                <TextBox x:Name="LastNameTextBox"
+                         Text="{Binding Path=AddPassportViewModel.LastName}"/>
+            </DockPanel>
+
+            <Separator />
+
+            <DockPanel>
+                <Label Content="Date of birth" />
+                <DatePicker x:Name="DateOfBirthDatePicker"
+                            SelectedDate="{Binding Path=AddPassportViewModel.DateOfBirth}"/>
+            </DockPanel>
+
+            <Separator />
+
+            <DockPanel>
+                <Label Content="Height" />
+
+                <TextBox x:Name="HeightTextBox"
+                         Text="{Binding Path=AddPassportViewModel.Height, TargetNullValue=''}"/>
+            </DockPanel>
+
+            <Separator />
+
+            <DockPanel>
+                <Label Content="Country" />
+                <TextBox x:Name="CountryTextBox"
+                         Text="{Binding Path=AddPassportViewModel.Country}"/>
+            </DockPanel>
+
+            <Separator />
+
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Content="Add"/>
+            </StackPanel>
+
+        </StackPanel>
+
+        <Separator DockPanel.Dock="Left" />
+
+        <DockPanel DockPanel.Dock="Left">
+
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        DockPanel.Dock="Bottom">
+                <Button Content="Clear"/>
+                <Separator />
+                <Button Content="Remove"/>
+            </StackPanel>
+
+            <Separator DockPanel.Dock="Bottom" />
+
+            <DataGrid x:Name="PassportsDataGrid"
+                      ItemsSource="{Binding Path=Passports}"
+                      SelectedItem="{Binding Path=SelectedPassport}"
+                      AutoGenerateColumns="False"
+                      CanUserAddRows="False"
+                      MaxColumnWidth="200"
+                      MinHeight="185"
+                      DockPanel.Dock="Top"
+                      SelectionMode="Single">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Id"
+                                        Width="Auto"
+                                        Binding="{Binding Path=Id}" />
+                    <DataGridTextColumn Header="First name"
+                                        Width="Auto"
+                                        Binding="{Binding Path=FirstName}" />
+                    <DataGridTextColumn Header="Last name"
+                                        Width="Auto"
+                                        Binding="{Binding Path=LastName}" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </DockPanel>
+        
+    </DockPanel>
+
+</Window>

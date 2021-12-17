@@ -1,0 +1,13 @@
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\PassportExercise\bin\Debug\netcoreapp3.1\PassportExercise.exe
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\PassportExercise\bin\Debug\netcoreapp3.1\PassportExercise.deps.json
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\PassportExercise\bin\Debug\netcoreapp3.1\PassportExercise.runtimeconfig.json
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\PassportExercise\bin\Debug\netcoreapp3.1\PassportExercise.runtimeconfig.dev.json
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\PassportExercise\bin\Debug\netcoreapp3.1\PassportExercise.dll
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\PassportExercise\bin\Debug\netcoreapp3.1\PassportExercise.pdb
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\PassportExercise\obj\Debug\netcoreapp3.1\PassportExercise.csprojAssemblyReference.cache
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\PassportExercise\obj\Debug\netcoreapp3.1\PassportExercise.AssemblyInfoInputs.cache
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\PassportExercise\obj\Debug\netcoreapp3.1\PassportExercise.AssemblyInfo.cs
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\PassportExercise\obj\Debug\netcoreapp3.1\PassportExercise.csproj.CoreCompileInputs.cache
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\PassportExercise\obj\Debug\netcoreapp3.1\PassportExercise.dll
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\PassportExercise\obj\Debug\netcoreapp3.1\PassportExercise.pdb
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\PassportExercise\obj\Debug\netcoreapp3.1\PassportExercise.genruntimeconfig.cache

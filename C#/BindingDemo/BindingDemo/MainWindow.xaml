@@ -1,0 +1,51 @@
+﻿<Window x:Class="BindingDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BindingDemo"
+        mc:Ignorable="d"
+        Title="Binding demo"
+        Width="500" Height="150">
+    <Window.Resources>
+        <Style TargetType="Separator">
+            <Setter Property="Width" Value="10"/>
+            <Setter Property="Height" Value="10"/>
+            <Setter Property="Opacity" Value="0"/>
+        </Style>
+    </Window.Resources>
+    <StackPanel Orientation="Vertical"
+                VerticalAlignment="Center"
+                Margin="20">
+        
+        <DockPanel>
+            <Label Content="Name" DockPanel.Dock="Left"/>
+            <Separator DockPanel.Dock="Left"/>
+            
+            <TextBox Text="{Binding Path=SubViewModel.Name, Mode=TwoWay}"
+                     DockPanel.Dock="Right"/>
+            
+        </DockPanel>
+
+        <Separator/>
+
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Set Name = AAAAA"
+                    HorizontalAlignment="Left"
+                    Click="SetNameAaaaaClicked"/>
+            <Separator/>
+            <Button Content="Set Name = 12345"
+                    HorizontalAlignment="Left"
+                    Click="SetName12345Clicked"/>
+            <Separator/>
+            <Button Content="Set Name Empty"
+                    HorizontalAlignment="Left"
+                    Click="SetNameEmptyClicked"/>
+            <Separator/>
+            <Button Content="BREAKPOINT"
+                    HorizontalAlignment="Left"
+                    Click="BreakpointClicked"/>
+        </StackPanel>
+
+    </StackPanel>
+</Window>

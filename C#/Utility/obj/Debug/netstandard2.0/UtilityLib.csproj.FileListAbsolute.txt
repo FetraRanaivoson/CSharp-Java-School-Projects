@@ -1,0 +1,9 @@
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Utility\bin\Debug\netstandard2.0\UtilityLib.deps.json
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Utility\bin\Debug\netstandard2.0\UtilityLib.dll
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Utility\bin\Debug\netstandard2.0\UtilityLib.pdb
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Utility\obj\Debug\netstandard2.0\UtilityLib.csprojAssemblyReference.cache
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Utility\obj\Debug\netstandard2.0\UtilityLib.AssemblyInfoInputs.cache
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Utility\obj\Debug\netstandard2.0\UtilityLib.AssemblyInfo.cs
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Utility\obj\Debug\netstandard2.0\UtilityLib.csproj.CoreCompileInputs.cache
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Utility\obj\Debug\netstandard2.0\UtilityLib.dll
+E:\ISI\COURS\SESSION 1\Programming in a graphical envirn C#\Solutions\Utility\obj\Debug\netstandard2.0\UtilityLib.pdb

@@ -1,0 +1,93 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "UtilityLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/UtilityLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UtilityLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UtilityLib/1.0.0": {
+      "type": "project",
+      "path": "../Utility/UtilityLib.csproj",
+      "msbuildProject": "../Utility/UtilityLib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "UtilityLib >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\MON PC\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\ISI\\COURS\\SESSION 1\\Programming in a graphical envirn C#\\Solutions\\StudentWpfExercise\\StudentWpfExercise.csproj",
+      "projectName": "StudentWpfExercise",
+      "projectPath": "E:\\ISI\\COURS\\SESSION 1\\Programming in a graphical envirn C#\\Solutions\\StudentWpfExercise\\StudentWpfExercise.csproj",
+      "packagesPath": "C:\\Users\\MON PC\\.nuget\\packages\\",
+      "outputPath": "E:\\ISI\\COURS\\SESSION 1\\Programming in a graphical envirn C#\\Solutions\\StudentWpfExercise\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\MON PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "E:\\ISI\\COURS\\SESSION 1\\Programming in a graphical envirn C#\\Solutions\\Utility\\UtilityLib.csproj": {
+              "projectPath": "E:\\ISI\\COURS\\SESSION 1\\Programming in a graphical envirn C#\\Solutions\\Utility\\UtilityLib.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
